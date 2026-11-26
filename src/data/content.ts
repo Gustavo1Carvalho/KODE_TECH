@@ -1,7 +1,6 @@
 /**
  * TODO O CONTEÚDO DO SITE FICA AQUI.
  * Edite os textos à vontade sem mexer nos componentes.
- * Tudo que estiver entre [COLCHETES] é para você trocar.
  */
 
 import imgAdvocacia from "../assets/projetos/advocacia.webp";
@@ -157,11 +156,11 @@ export const projetos: { rotulo: string; titulo: string; subtitulo: string; iten
       titulo: "Site para provedor de internet: VEXFO Fibra",
       descricao:
         "Site para provedor de internet no Maranhão, com apresentação dos planos, destaque para instalação grátis e contato direto para contratação.",
-      tags: ["Site", "Provedor de internet", "Cliente real"],
+      tags: ["Site", "Provedor de internet", "Projeto real"],
       imagem: imgVexfo,
       alt: "Site do provedor de internet VEXFO Fibra",
       link: "https://vexfofibra.netlify.app/",
-      selo: "Cliente",
+      selo: "Projeto real",
     },
     {
       titulo: "Sistema de agendamento para salão de beleza",
@@ -221,7 +220,7 @@ export const faq = {
     {
       pergunta: "Quanto tempo demora?",
       resposta:
-        "Também depende do tamanho do projeto. O prazo fica definido por escrito na proposta, antes de começar. [SEU TEXTO: prazo médio, ex. landing page em X dias]",
+        "Uma landing page fica pronta em média em 7 a 15 dias. Sistemas dependem do tamanho do projeto, e o prazo é combinado na proposta.",
     },
     {
       pergunta: "Preciso ter domínio e hospedagem?",
@@ -231,7 +230,12 @@ export const faq = {
     {
       pergunta: "Vocês fazem manutenção depois?",
       resposta:
-        "Sim. Depois da entrega há suporte para manutenção e ajustes. [SEU TEXTO: como funciona o suporte, ex. período incluso e plano mensal]",
+        "Sim. Todo projeto tem 30 dias de ajustes inclusos depois da entrega. Depois disso, você pode contratar um plano mensal de manutenção.",
+    },
+    {
+      pergunta: "Vocês atendem minha cidade?",
+      resposta:
+        "Sim! Todo o atendimento é online, então atendemos empresas de qualquer lugar do Brasil.",
     },
   ],
 };
