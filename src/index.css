@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Fonte de fallback com métricas ajustadas para a Space Grotesk.
+ * Enquanto a fonte do Google carrega, o texto aparece em Arial com o mesmo
+ * tamanho visual, evitando que a página "pule" (CLS) na troca.
+ */
+@font-face {
+  font-family: "Space Grotesk Fallback";
+  src: local("Arial"), local("Helvetica"), local("Liberation Sans");
+  size-adjust: 108.38%;
+  ascent-override: 90.79%;
+  descent-override: 26.94%;
+  line-gap-override: 0%;
+}
+
+@layer base {
+  html {
+    @apply bg-ink text-text antialiased;
+    /* altura do menu fixo (menos 1px, para a borda da seção ficar sob a borda do menu) */
+    scroll-padding-top: calc(4rem - 1px);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: calc(4.5rem - 1px);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply min-h-screen font-sans text-base leading-relaxed;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+
+  :focus-visible {
+    @apply rounded-md outline outline-2 outline-offset-4 outline-accent;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-balance font-bold tracking-tight text-text;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8;
+  }
+
+  .section {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2.5 rounded-xl px-6 text-base font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-ink hover:bg-accent-hover;
+  }
+
+  .btn-secondary {
+    @apply btn border border-line text-text hover:border-accent/60 hover:bg-ink-raised;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[0.8125rem] font-medium tracking-wide text-accent;
+  }
+
+  /* grade sutil de fundo do hero */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(35 44 71 / 0.45) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(35 44 71 / 0.45) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 30%, transparent 75%);
+  }
+
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-accent px-4 py-3 font-medium text-ink transition-transform focus:translate-y-0;
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <title>Criação de Sites e Sistemas Sob Medida | Kode Tech</title>
+    <meta
+      name="description"
+      content="Criação de sites, landing pages, sistemas sob medida e automações para pequenas e médias empresas, com atendimento online para todo o Brasil. Peça seu orçamento pelo WhatsApp."
+    />
+    <!-- [TROCAR] SEU-DOMINIO.com.br pelo seu domínio real (use "Localizar e substituir": aparece em vários lugares deste arquivo) -->
+    <link rel="canonical" href="https://SEU-DOMINIO.com.br/" />
+    <meta name="theme-color" content="#0B1020" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Open Graph (prévia do link no WhatsApp, Instagram, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Kode Tech" />
+    <meta property="og:title" content="Kode Tech | Criação de sites e sistemas sob medida" />
+    <meta
+      property="og:description"
+      content="Sites, sistemas e automações feitos sob medida para a sua empresa. Atendimento online para todo o Brasil. Peça seu orçamento pelo WhatsApp."
+    />
+    <meta property="og:url" content="https://SEU-DOMINIO.com.br/" />
+    <meta property="og:image" content="https://SEU-DOMINIO.com.br/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kode Tech: sites, sistemas e automações sob medida, com atendimento online para todo o Brasil" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Ícones -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fontes (display=swap) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    />
+
+    <!-- Dados estruturados: empresa com atendimento online em todo o Brasil.
+         O marcador WHATSAPP (entre sinais de %) é trocado no build pelo número de src/config.ts. -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://SEU-DOMINIO.com.br/#empresa",
+        "name": "Kode Tech",
+        "description": "Criação de sites, landing pages, sistemas sob medida e automações para pequenas e médias empresas, com atendimento online para todo o Brasil.",
+        "url": "https://SEU-DOMINIO.com.br/",
+        "image": "https://SEU-DOMINIO.com.br/og-image.png",
+        "logo": "https://SEU-DOMINIO.com.br/icon-512.png",
+        "areaServed": "BR",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+%WHATSAPP%",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
+        },
+        "sameAs": ["https://www.instagram.com/kode__tech/"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"><!--app--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+  </body>
+</html>

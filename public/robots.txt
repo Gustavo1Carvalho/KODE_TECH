@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# [TROCAR] SEU-DOMINIO.com.br pelo seu domínio
+Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
